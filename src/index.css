@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+.dark-mode {
+	background-color: #000000;
+}
+
+.dark-mode h1 {
+	color: #FFFFFF;
+}
+
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+	min-height: 100vh;
+	padding: 0 20px;
+}
+
+.search {
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	display: flex;
+	margin-bottom: 24px;
+	padding: 5px;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
+
+.notesList {
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note {
+	background-color: #F7DC6F;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 180px;
+	padding: 16px;
+	white-space: pre-wrap;
+}
+
+.note span {
+	max-width: 225px;
+}
+
+.noteFooter {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.noteDeleteIcon {
+	cursor: pointer;
+}
+
+.note.newNote {
+	background-color: #EC7063;
+}
+
+textarea {
+	background-color: #EC7063;
+	border: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.noteSave {
+	background-color: #E1E1E1;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px;
+}
+
+.noteSave:hover {
+	background-color: #EDEDED;
+	cursor: pointer;
+}
+
